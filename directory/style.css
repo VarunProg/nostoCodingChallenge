@@ -3,13 +3,11 @@
 }
 
 body {
-  /* max-width: 1440px; */
   margin: auto;
 }
 
 .main-container {
   display: flex;
-  /* max-width: 1400px; */
   margin: 0 auto;
   background: #ededed;
   height: 100vh;
@@ -162,6 +160,13 @@ body {
   font-weight: bold;
 }
 
+@media screen and  (max-width: 480px) {
+ .slide .best-seller-label {
+      top: 5%;
+      left: 10%;
+    }
+}
+
 @media screen and (max-width: 768px) {
   .main-container {
     flex-direction: column;
@@ -188,8 +193,7 @@ body {
   }
 
   .best-seller-label {
-    position: fixed;
-    left: 27%;
+    left: 30%;
     top: 5%;
   }
 
